@@ -15,6 +15,7 @@ namespace Primszamosdi
         public Form1()
         {
             InitializeComponent();
+           // PrimeSearcher primeS = new PrimeSearcher();  -------> példányosítás
         }
     }
 }
