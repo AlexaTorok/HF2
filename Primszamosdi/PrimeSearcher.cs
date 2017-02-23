@@ -8,9 +8,11 @@ namespace Primszamosdi
 {
     class PrimeSearcher
     {
+        public static bool primszame = false;
+
         public static void PrimeSearching(int number)
         {
-            bool primszame = false;
+            
             for (int i = 2; i < number; i++)
             {
                 if(number % i == 0)
