@@ -8,19 +8,14 @@ namespace Primszamosdi
 {
     class PrimeSearcher
     {
-        public static bool primszame = false;
-
-        public static void PrimeSearching(int number)
+        public static bool PrimeSearching(int number)
         {
-            
-            for (int i = 2; i < number; i++)
+            int i;
+            for (i = 2; i * i <= number; i++)
             {
-                if(number % i == 0)
-                {
-                    primszame = false;
-                }
+                if (number % i == 0) return false;
             }
-            primszame = true;
+            return true;
         }
     }
 }
